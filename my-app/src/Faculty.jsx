@@ -1,6 +1,5 @@
 import { Datagrid, DateField, List, ReferenceField, TextField } from 'react-admin';
 import { Show, SimpleShowLayout } from 'react-admin';
-import { Show, SimpleShowLayout, TextField } from 'react-admin';
 import { DateInput, Edit, ReferenceInput, SimpleForm, TextInput } from 'react-admin';
 
 export const FacultyList = () => (
