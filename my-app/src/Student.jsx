@@ -1,4 +1,5 @@
-import { Datagrid, DateField, List, ReferenceField, TextField } from 'react-admin';
+import * as React from "react";
+import { Datagrid, DateField, List, ReferenceField, TextField, SearchInput} from 'react-admin';
 import { Show, SimpleShowLayout } from 'react-admin';
 import { DateInput, Edit, ReferenceInput, SimpleForm, TextInput, Create, EditButton, ShowButton } from 'react-admin';
 
