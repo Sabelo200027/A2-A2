@@ -1,6 +1,6 @@
-import { Datagrid, DateField, List, ReferenceField, TextField } from 'react-admin';
+import { Datagrid, DateField, EditButton, List, ReferenceField, ShowButton, TextField } from 'react-admin';
 import { Show, SimpleShowLayout } from 'react-admin';
-import { DateInput, Edit, ReferenceInput, SimpleForm, TextInput } from 'react-admin';
+import { DateInput, Edit, ReferenceInput, SimpleForm, TextInput, EditButton, Create } from 'react-admin';
 
 export const FacultyList = () => (
     <List>
@@ -10,6 +10,8 @@ export const FacultyList = () => (
             <TextField source="Programme" />
             <DateField source="created" />
             <DateField source="updated" />
+            <EditButton/>
+            <ShowButton/>
         </Datagrid>
     </List>
 );
@@ -35,4 +37,15 @@ export const FacultyEdit = () => (
             <DateInput source="updated" />
         </SimpleForm>
     </Edit>
+);
+
+export const FacultyCreate = () => (
+    <Create>
+        <SimpleForm>
+            <TextInput source="Faculty_Type" />
+            <TextInput source="Programme" />
+            <DateInput source="created" />
+            <DateInput source="updated" />
+        </SimpleForm>
+    </Create>
 );
